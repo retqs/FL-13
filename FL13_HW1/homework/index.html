@@ -224,20 +224,20 @@ both      <strong>spaces</strong> and
 
               <form>
                 <fieldset>
-                  <label>Name:</label>
-                  <input type="text" />
+                  <label for="name">Name:</label>
+                  <input id="name" name="name" type="text" />
                 </fieldset>
                 <fieldset>
-                  <label>Email:</label>
-                  <input type="email" />
+                  <label for="email">Email:</label>
+                  <input id="email" name="email" type="email" />
                 </fieldset>
                 <fieldset>
-                  <label>Password:</label>
-                  <input type="password" />
+                  <label for="password">Password:</label>
+                  <input id="password" name="password" type="password" />
                 </fieldset>
                 <fieldset>
                   <label>Select Programming Language</label>
-                  <select>
+                  <select id="select">
                     <option value="JavaScript">JavaScript</option>
                     <option value="JavaScript">.Net</option>
                     <option value="JavaScript">Java</option>
@@ -245,7 +245,7 @@ both      <strong>spaces</strong> and
                 </fieldset>
                 <br />
                 <fieldset>
-                  <textarea cols="23" rows="3"></textarea>
+                  <textarea name="textarea" cols="23" rows="3"></textarea>
                 </fieldset>
                 <br />
                 <button type="submit">Submit</button>
