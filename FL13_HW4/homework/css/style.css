@@ -128,7 +128,7 @@ body {
 
 .content {
   height: 100%;
-  width: 900px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -155,7 +155,7 @@ body {
 }
 
 .box__img {
-  height: 600px;
+  max-height: 600px;
   width: 100%;
 }
 
