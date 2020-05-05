@@ -3,7 +3,7 @@ function convert(...nums) {
   let tempArr = [];
   for (let i = 0; i < nums.length; i++) {
     typeof nums[i] === 'string'
-      ? tempArr.push(+nums[i])
+      ? tempArr.push(parseInt(nums[i], 10))
       : tempArr.push(String(nums[i]));
   }
 
