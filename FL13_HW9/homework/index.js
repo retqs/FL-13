@@ -1,9 +1,16 @@
 // Your code goes here
 function convert(...nums) {
-  return nums.map((num) => typeof num === 'string' ? +num : String(num));
+  let tempArr = [];
+  for (let i = 0; i < nums.length; i++) {
+    typeof nums[i] === 'string'
+      ? tempArr.push(+nums[i])
+      : tempArr.push(String(nums[i]));
+  }
+
+  return tempArr;
 }
 
-convert('1', 2, 3, '4');
+console.log(convert('1', 2, 3, '4'));
 
 function executeforEach(args, fn) {
   for (let i = 0; i < args.length; i++) {
