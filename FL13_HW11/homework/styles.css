@@ -1,0 +1,89 @@
+/* TODO: your styles goes here*/
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+  min-height: 100px;
+  width: 400px;
+  padding: 10px 0;
+}
+
+input {
+  background: none;
+  border: none;
+  height: 100%;
+  cursor: pointer;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* .menuItem {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 30px;
+  position: relative;
+} */
+
+.innerMenu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+
+.open {
+  display: block;
+}
+
+.title:hover {
+  background: rgb(209, 209, 209);
+}
+
+.selected {
+  background: rgb(209, 209, 209) !important;
+}
+
+.contextMenu {
+  background: #e2e2e2;
+  min-height: 20px;
+  min-width: 50px;
+  position: absolute;
+  display: none;
+  padding: 10px;
+}
+
+.contextMenu > * {
+  padding: 3px;
+  color: grey;
+  pointer-events: none;
+}
+
+.contextMenu.active > * {
+  cursor: pointer;
+  color: black;
+  pointer-events: all;
+}
+
+.contextMenu.active .option:hover {
+  background: rgb(195, 195, 195);
+}
+
+.open {
+  display: block;
+}
