@@ -1,0 +1,342 @@
+// ------------------------- Header --------------------------
+
+.head__navigation {
+  margin-top: 28px;
+  display: flex;
+  justify-content: space-between;
+
+  #burger,
+  #burgerIcon {
+    display: none;
+  }
+
+  .burger__line {
+    display: block;
+    margin-top: 5px;
+    width: 30px;
+    height: 4px;
+    background-color: #4d4c49;
+    border-radius: 7px;
+  }
+}
+
+.head__caption {
+  font-family: 'Hind Siliguri Bold', sans-serif;
+  color: #4d4c49;
+  font-size: 17px;
+}
+
+.navbar {
+  margin-right: 0;
+
+  &__item {
+    font-family: 'Hind Siliguri', sans-serif;
+    line-height: 25px;
+    color: #4d4949;
+    font-size: 15px;
+
+    &:not(:last-child) {
+      margin-right: 37px;
+    }
+  }
+
+  .active {
+    font-weight: 900;
+    text-decoration: underline;
+  }
+}
+
+// ------------------------- Buttons --------------------------
+
+.btn {
+  padding: 10px 26px;
+  height: 45px;
+  font-size: 15px;
+
+  &:hover {
+    background-color: #393737;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+
+.btn--black {
+  border: none;
+  border-radius: 5px;
+  background-color: $btn-dark-bg;
+  color: #fff;
+}
+
+.btn--white {
+  border-radius: 5px;
+  border: 1px solid #4d4949;
+  background-color: transparent;
+}
+
+// ------------------------- Heading --------------------------
+
+.heading {
+  font-family: 'Hind Siliguri', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 80px 0 61px 0;
+
+  &__title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 39px;
+    margin-bottom: 2.5px;
+  }
+
+  &__figure {
+    position: relative;
+    width: 95px;
+    height: 8px;
+    border-right: 1px solid #4d4949;
+    border-bottom: 1px solid #4d4949;
+    border-left: 1px solid #4d4949;
+
+    &::before {
+      position: absolute;
+      content: '';
+      left: -3px;
+      top: 0;
+      background: #4d4949;
+      width: 3px;
+      height: 1px;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      right: -3px;
+      top: 0;
+      background: #4d4949;
+      width: 3px;
+      height: 1px;
+    }
+  }
+
+  &__text {
+    font-family: 'Lucida Grande', sans-serif;
+    font-size: 17px;
+    line-height: 26px;
+    text-align: center;
+    margin-top: 14.5px;
+    max-width: 442px;
+  }
+}
+
+// ------------------------- Video-button -----------------------
+
+.video__button {
+  position: absolute;
+  content: '';
+  top: calc(50% - 36px);
+  left: calc(50% - 46px);
+  height: 72px;
+  width: 72px;
+  border-radius: 50%;
+  background: rgba(77, 73, 73, 0.7);
+  z-index: 999;
+
+  &::after {
+    position: absolute;
+    content: '';
+    top: calc(50% - 18px);
+    left: calc(50% - 8px);
+    width: 0;
+    height: 0;
+    border-radius: 4px;
+    border: 18px solid transparent;
+    border-left: 23px solid #fff;
+  }
+}
+
+// ------------------------- Contact-links ----------------------
+
+.contact__links {
+  display: flex;
+  justify-content: space-between;
+  width: 112px;
+  padding-top: 23px;
+
+  .link__fb {
+    background: url('../img/a-icon-facebook.svg');
+    height: 23px;
+    width: 14px;
+  }
+
+  .link__inst {
+    background: url('../img/a-icon-instagram.svg');
+    height: 23px;
+    width: 23px;
+  }
+
+  .link__drib {
+    background: url('../img/a-icon-dribbble.svg');
+    height: 23px;
+    width: 23px;
+  }
+}
+
+// ------------------------- post-info --------------------------
+
+.comment {
+  width: 100%;
+
+  &__img {
+    float: left;
+    margin-right: 15px;
+  }
+
+  &__name {
+    color: #4d4949;
+    font-weight: 900;
+  }
+
+  .post__views {
+    margin-left: 21px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background: url('../img/a-icon-comment.svg');
+      left: -18px;
+      top: 5px;
+      width: 14px;
+      height: 13px;
+    }
+  }
+
+  .post-info {
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 15px;
+    color: #818181;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    z-index: 999;
+
+    span {
+      margin-right: 7px;
+    }
+
+    .post__rate {
+      display: flex;
+      margin-left: 8px;
+
+      .rate__star {
+        width: 14px;
+        height: 14px;
+        background-color: #d8d8d8;
+        clip-path: polygon(
+          50% 0%,
+          61% 35%,
+          98% 35%,
+          68% 57%,
+          79% 91%,
+          50% 70%,
+          21% 91%,
+          32% 57%,
+          2% 35%,
+          39% 35%
+        );
+        margin-right: 3px;
+      }
+
+      .painted {
+        background-color: #deee23;
+      }
+
+      .half-painted {
+        border-left: 6.5px solid #deee23;
+      }
+    }
+  }
+}
+
+// ------------------------- Scroll Top ----------------------
+
+.scroll_top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  width: 35px;
+  height: 35px;
+  border: 1px solid #4d4949;
+  background: url('../img/a-icon-arrow.svg') center/cover no-repeat;
+  background-size: 20px;
+  border-radius: 5px;
+  transform: rotateZ(-180deg);
+}
+
+// ------------------------- Footer --------------------------
+
+.footer {
+  min-height: 71px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+
+  &__content {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .contact__links {
+    padding: 0;
+  }
+
+  &__caption {
+    font-family: 'Hind Siliguri Bold', sans-serif;
+    color: #4d4c49;
+    font-size: 17px;
+    margin-left: 60px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .head {
+    &__navigation {
+      #burgerIcon {
+        display: block;
+      }
+
+      .navbar {
+        display: none;
+
+        &__item {
+          &:not(:last-child) {
+            margin-right: 0;
+          }
+        }
+      }
+
+      #burger:checked + .navbar {
+        position: absolute;
+        top: 70px;
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+      }
+    }
+  }
+
+  .footer {
+    &__content {
+      justify-content: center;
+    }
+
+    &__caption {
+      margin-left: 10px;
+    }
+  }
+}

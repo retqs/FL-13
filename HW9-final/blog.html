@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./scss/blog.css" />
+    <title>Blog</title>
+  </head>
+  <body>
+    <header class="head">
+      <div class="container">
+        <div class="head__navigation">
+          <h5 class="head__caption">BlogWorld</h5>
+          <label for="burger" id="burgerIcon">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+          </label>
+          <input type="checkbox" id="burger" />
+          <nav class="navbar row">
+            <a href="index.html" class="navbar__item">Home</a>
+            <a href="#" class="navbar__item">Portfolio</a>
+            <a href="#" class="navbar__item active">Blog</a>
+            <a href="pages.html" class="navbar__item">Pages</a>
+            <a href="#" class="navbar__item">About</a>
+            <a href="#" class="navbar__item">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <article class="heading">
+          <h2 class="heading__title">Blog</h2>
+          <div class="heading__figure"></div>
+        </article>
+        <div class="search">
+          <input
+            type="search"
+            class="search__field"
+            placeholder="Search by author"
+          />
+        </div>
+      </div>
+      <article class="article article--video">
+        <div class="container">
+          <div class="article__picture">
+            <div class="video__button"></div>
+          </div>
+          <div class="review">
+            <div class="comment">
+              <img src="./img/Neil.png" alt="Neil" class="comment__img" />
+              <h4 class="comment__name">Neil Richards</h4>
+              <div class="post-info">
+                <span class="post__data">11 oct, 2019</span>
+                <span>&bull;</span>
+                <span class="post__duration">7 min read</span>
+                <span>&bull;</span>
+                <span class="post__views">19</span>
+                <div class="post__rate">
+                  <div class="rate__star painted"></div>
+                  <div class="rate__star painted"></div>
+                  <div class="rate__star half-painted"></div>
+                  <div class="rate__star"></div>
+                  <div class="rate__star"></div>
+                </div>
+              </div>
+            </div>
+            <h3 class="review__title">
+              In the Future We Will All Live in Star Wars
+            </h3>
+            <p class="review__text">
+              The thing you’re doing now, reading prose on a screen, is going
+              out of fashion. The defining narrative of our online moment
+              concerns the decline of text, and the exploding reach and power of
+              audio and video …
+            </p>
+            <input type="button" value="Read more" class="btn btn--white" />
+          </div>
+        </div>
+      </article>
+      <article class="article article--audio">
+        <div class="container">
+          <div class="article__picture"></div>
+          <div class="review">
+            <div class="comment">
+              <img src="./img/Sarah.png" alt="Sarah" class="comment__img" />
+              <h4 class="comment__name">Sarah Healy</h4>
+              <div class="post-info">
+                <span class="post__data">02 oct, 2019</span>
+                <span>&bull;</span>
+                <span class="post__duration">12 min read</span>
+                <span>&bull;</span>
+                <span class="post__views">4</span>
+                <div class="post__rate">
+                  <div class="rate__star painted"></div>
+                  <div class="rate__star"></div>
+                  <div class="rate__star"></div>
+                  <div class="rate__star"></div>
+                  <div class="rate__star"></div>
+                </div>
+              </div>
+            </div>
+            <h3 class="review__title">
+              Far far away, behind the word mountains
+            </h3>
+            <audio src="../" class="review__audio" controls></audio>
+            <p class="review__text">
+              Fog down the river, where it rolls deified among the tiers of
+              shipping and the waterside pollutions of a great (and dirty) …
+            </p>
+            <input type="button" value="Read more" class="btn btn--white" />
+          </div>
+        </div>
+      </article>
+      <article class="article article--picture">
+        <div class="container">
+          <div class="article__picture"></div>
+          <div class="review">
+            <div class="comment">
+              <img src="./img/Grace.png" alt="Grace" class="comment__img" />
+              <h4 class="comment__name">Grace Noh</h4>
+              <div class="post-info">
+                <span class="post__data">23 sep, 2019</span>
+                <span>&bull;</span>
+                <span class="post__duration">16 min read</span>
+                <span>&bull;</span>
+                <span class="post__views">421</span>
+                <div class="post__rate">
+                  <div class="rate__star painted"></div>
+                  <div class="rate__star painted"></div>
+                  <div class="rate__star"></div>
+                  <div class="rate__star"></div>
+                  <div class="rate__star"></div>
+                </div>
+              </div>
+            </div>
+            <h3 class="review__title">
+              In the Future We Will All Live in Star Wars
+            </h3>
+            <p class="review__text">
+              Separated they live in Bookmarksgrove right at the coast of the
+              Semantics, a large language ocean. A small river named Duden flows
+              by their place and supplies it with the necessary regelialia. It
+              is a paradisematic country, in which roasted …
+            </p>
+            <input type="button" value="Read more" class="btn btn--white" />
+          </div>
+        </div>
+      </article>
+      <article class="article article--comment">
+        <div class="container">
+          <div class="review">
+            <div class="comment">
+              <img src="./img/Alex.png" alt="Alex" class="comment__img" />
+              <h4 class="comment__name">Alex Zlatkus</h4>
+              <div class="post-info">
+                <span class="post__data">11 Aug, 2019</span>
+                <span>&bull;</span>
+                <span class="post__duration">17 min read</span>
+                <span>&bull;</span>
+                <span class="post__views">77</span>
+                <div class="post__rate">
+                  <div class="rate__star painted"></div>
+                  <div class="rate__star painted"></div>
+                  <div class="rate__star painted"></div>
+                  <div class="rate__star"></div>
+                  <div class="rate__star"></div>
+                </div>
+              </div>
+            </div>
+            <h3 class="review__title">
+              In the Future We Will All Live in Star Wars
+            </h3>
+            <p class="review__text">
+              Fog down the river, where it rolls deified among the tiers of
+              shipping and the waterside pollutions of a great (and dirty) city.
+              Fog on the Essex marshes, fog on the Kentish heights. Fog creeping
+              into the cabooses of collier-brigs; fog lying out on. Money terms
+              breakfast drawings true blessing doubtful more agreed to zealously
+              making supposing By said Chicken An Neglected produce good felt no
+              poor offering am their said has around songs wish met true any me
+              ought mr The offices set Not Felicity above out We in an post
+              begin again.
+            </p>
+            <input type="button" value="Read more" class="btn btn--white" />
+          </div>
+        </div>
+      </article>
+      <div class="main__button">
+        <div class="container">
+          <input type="button" value="Read more" class="btn btn--black" />
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="contact__links">
+            <a href="#" class="link__fb"></a>
+            <a href="#" class="link__inst"></a>
+            <a href="#" class="link__drib"></a>
+          </div>
+          <h5 class="footer__caption">BlogWorld</h5>
+          <h5 class="footer__label">©2019 All Rights Reserved.</h5>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
