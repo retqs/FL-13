@@ -1,0 +1,95 @@
+@import './var';
+@import './form';
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+  background: $bg;
+}
+
+.nav {
+  height: 70px;
+  width: 100%;
+  @include flexItem(center, space-between, row);
+  background: $white;
+  padding: 0 5rem;
+  border-bottom: 2px solid #f2f2f2;
+
+  &__logo {
+    font-size: 22px;
+  }
+
+  &__createBtn {
+    background: $purple;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: $white;
+    transition: all 0.4s ease;
+    text-decoration: none;
+  }
+}
+
+.content {
+  height: 100%;
+  width: 1172px;
+  margin: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  @media screen and (max-width: 1172px) {
+    width: 90vw;
+  }
+
+  .list {
+    list-style: none;
+    &__item {
+      background: $white;
+      padding: 10px 5px;
+      border-radius: 5px;
+
+      &:not(:first-child) {
+        margin-top: var(--whiteSpace);
+      }
+
+      & > * {
+        &:not(:first-child) {
+          margin-top: var(--whiteSpace);
+        }
+      }
+
+      h2 {
+        span {
+          font-weight: 400;
+          font-size: 18px;
+        }
+      }
+
+      &--quote {
+        padding: 20px;
+        font-style: italic;
+        font-size: 20px;
+      }
+
+      &--img {
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+
+        img {
+          max-width: 200px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+.modalForm {
+  background: $white;
+  padding: 10px;
+  max-width: 500px;
+  border-radius: 5px;
+  position: relative;
+  margin: 50px auto 0 auto;
+
+  &__error {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #e12a48;
+    color: $white;
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__row {
+    border: none;
+
+    &:not(:first-child) {
+      margin-top: var(--whiteSpace);
+    }
+
+    label {
+      text-transform: capitalize;
+      @include flexItem(flex-start, flex-start, column);
+      font-size: 18px;
+    }
+
+    input[type='text'] {
+      min-width: 300px;
+      padding: 5px 0;
+      font-size: 15px;
+      outline: none;
+      border: none;
+      border-bottom: 1px solid $black;
+    }
+
+    textarea {
+      resize: none;
+      outline: none;
+      width: 100%;
+      height: 100%;
+      padding: 5px;
+    }
+  }
+
+  &__submit {
+    @extend .nav__createBtn;
+    float: right;
+    margin-top: 10px;
+
+    &:disabled {
+      background: $grey;
+    }
+  }
+}

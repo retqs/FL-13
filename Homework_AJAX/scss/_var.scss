@@ -1,0 +1,16 @@
+$white: #fff;
+$black: #212121;
+$bg: #f5f8fa;
+$grey: #999;
+$purple: #788eec;
+
+:root {
+  --whiteSpace: 20px;
+}
+
+@mixin flexItem($algn, $jst, $flow) {
+  display: flex;
+  align-items: $algn;
+  justify-content: $jst;
+  flex-flow: $flow;
+}
