@@ -89,12 +89,15 @@ function createFields() {
 
 function validation(value) {
   const errors = {};
+  console.log(value.slice(0, 1), value);
   if (value.length <= 2) {
     errors.title = 'Title must be more than 2 characters';
   } else if (value.length >= 20) {
     errors.title = 'Title must be less than 20 characters ';
   } else if (/[$%^&*()_+|~=`@#{}\[\]";'<>\/]/gi.test(value)) {
     errors.title = "Mustn't include special characters";
+  } else if (value.slice(0, 1) !== value.slice(0, 1).toUpperCase()) {
+    errors.title = 'Title must start with an uppercase letter;';
   }
 
   return errors;
